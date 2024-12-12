@@ -121,40 +121,6 @@
   </div>
 </section>
 
-
-<!--<section class="hero is-light is-small">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container">-->
-<!--      <div id="results-carousel" class="carousel results-carousel">-->
-<!--        <div class="item item-steve">-->
-<!--          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">-->
-<!--            <source src="./video/canyon.mp4"-->
-<!--                    type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-chair-tp">-->
-<!--          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">-->
-<!--            <source src="./video/SceneX_river_demo.mp4"-->
-<!--                    type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-shiba">-->
-<!--          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">-->
-<!--            <source src="./video/SceneX_forest_demo.mp4"-->
-<!--                    type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-fullbody">-->
-<!--          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">-->
-<!--            <source src="./video/SceneX_snow_demo.mp4"-->
-<!--                    type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
@@ -193,27 +159,47 @@
 <div class="hero-body">
   <div class="container">
     <div id="results-carousel" class="carousel results-carousel">
-      <div class="item item-steve">
-        <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-          <source src="./video/SceneX_1_demo.mp4"
+      <div class="item item-demo1">
+        <video poster="" id="demo1" autoplay controls muted loop playsinline height="100%">
+          <source src="./video/demo1.mkv"
                   type="video/mp4">
         </video>
       </div>
-      <div class="item item-chair-tp">
-        <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-          <source src="./video/SceneX_3_demo(1).mp4"
+      <div class="item item-demo2">
+        <video poster="" id="demo2" autoplay controls muted loop playsinline height="100%">
+          <source src="./video/demo2.mkv"
                   type="video/mp4">
         </video>
       </div>
-      <div class="item item-shiba">
-        <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-          <source src="./video/SceneX_2_demo.mp4"
+      <div class="item item-demo3">
+        <video poster="" id="demo3" autoplay controls muted loop playsinline height="100%">
+          <source src="./video/demo3_gaungzhou_01.mkv"
                   type="video/mp4">
         </video>
       </div>
-      <div class="item item-fullbody">
-        <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-          <source src="./video/SceneX_4_demo(1).mp4"
+      <div class="item item-demo4">
+        <video poster="" id="demo4" autoplay controls muted loop playsinline height="100%">
+          <source src="./video/demo4_tokyo_01.mkv"
+                  type="video/mp4">
+        </video>
+      <div class="item item-demo5">
+        <video poster="" id="demo5" autoplay controls muted loop playsinline height="100%">
+          <source src="./video/demo5.mkv"
+                  type="video/mp4">
+        </video>
+      <div class="item item-demo6">
+        <video poster="" id="demo6" autoplay controls muted loop playsinline height="100%">
+          <source src="./video/demo6.mkv"
+                  type="video/mp4">
+        </video>
+      <div class="item item-demo7">
+        <video poster="" id="demo7" autoplay controls muted loop playsinline height="100%">
+          <source src="./video/demo7.mkv"
+                  type="video/mp4">
+        </video>
+      <div class="item item-demo8">
+        <video poster="" id="demo8" autoplay controls muted loop playsinline height="100%">
+          <source src="./video/demo8.mp4"
                   type="video/mp4">
         </video>
       </div>
@@ -249,7 +235,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3 mt-5">The proposed CityX can create large-scale 3D unbounded cities automatically according to user instructions.</h2>
-        <img src="./image/mainfig.jpg" alt="The proposed CityX, under the guidance of multimodal inputs including OSM data, semantic maps, and satellite images, facilitates the automatic creation of realistic large-scale 3D urban scenes.The generated models are characterized by delicate geometric structures, realistic material textures, and natural lighting, allowing for seamless deployment in the industrial pipeline." height="100%">
+        <img src="./image/startfig.png" alt="The proposed CityX, under the guidance of multimodal inputs including OSM data, semantic maps, and satellite images, facilitates the automatic creation of realistic large-scale 3D urban scenes.The generated models are characterized by delicate geometric structures, realistic material textures, and natural lighting, allowing for seamless deployment in the industrial pipeline." height="100%">
         <p class="content has-text-justified">
           The proposed CityX, under the guidance of multimodal inputs including OSM data, semantic maps, and satellite images, facilitates the automatic creation of realistic large-scale 3D urban scenes.The generated models are characterized by delicate geometric structures, realistic material textures, and natural lighting, allowing for seamless deployment in the industrial pipeline.
         </p>
@@ -264,6 +250,15 @@
         <img src="./image/pipeline.jpg" alt="The proposed SceneX can create large-scale 3D natural scenes or unbounded cities automatically according to user instructions. The generated models are characterized by delicate geometric structures, realistic material textures, and natural lighting, allowing for seamless deployment in the industrial pipeline." height="100%">
         <p class="content has-text-justified">
           The Multi-agent framework includes a pre-processing stage and four task stages. During the pre-processing stage, the PCG is encapsulated into action functions according to the PCG Management Protocol proposed in this work. In the task stages, the planner first specifies the subtask plans based on the user's description and provided inputs. For each subtask, the planner's assistant validates the proposed subtask. If the conditions are met, the planner passes the relevant parameters to the executor to be performed in Blender. The results are then evaluated by the feedback agent. If the requirements are met, the process moves to the next subtask; if not, it reverts until all tasks are completed. This coordinated effort among agents facilitates the generation of large-scale urban scenes.
+        </p>
+      </div>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 mt-5">Urban Scene Dataset Synthetic</h2>
+        <img src="./image/pipeline.jpg" alt="The proposed SceneX can create large-scale 3D natural scenes or unbounded cities automatically according to user instructions. The generated models are characterized by delicate geometric structures, realistic material textures, and natural lighting, allowing for seamless deployment in the industrial pipeline." height="100%">
+        <p class="content has-text-justified">
+          For each image (a), we have a high-resolution mesh (b), which readily yields Depth (c), Surface Normals (d), Diffuse Map (e), Instance Segmentation masks (f), Ambient Occlusion (g), Cryptomatte Object/Material Mask (h/i), and Glossy Direct/Color/Indirect (j/k/l).We used a 1920 × 1080 resolution with 10,000 random samples per pixel, a standard setting in Blender that effectively eliminates sampling noise, resulting in a high-quality final image.
         </p>
       </div>
     </div>
